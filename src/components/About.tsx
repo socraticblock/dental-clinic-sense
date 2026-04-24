@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { type FC } from 'react';
 import { motion } from 'framer-motion';
 import { Building2, Microscope, Wand2 } from 'lucide-react';
 

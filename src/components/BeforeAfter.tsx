@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback, FC } from 'react';
+import { useState, useRef, useCallback, type FC } from 'react';
 
 const tabs = ["Aesthetic Dentistry", "Orthodontics", "Implantology", "Cleaning"];
 
