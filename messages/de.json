@@ -1,0 +1,130 @@
+{
+  "Navbar": {
+    "brandName": "Dental Clinic Sense",
+    "links": {
+      "home": "Startseite",
+      "about": "Über uns",
+      "services": "Leistungen",
+      "doctors": "Ärzte",
+      "faq": "FAQ"
+    },
+    "bookButton": "Termin vereinbaren"
+  },
+  "Hero": {
+    "quote": "\"A smile is the prettiest thing you can wear\"",
+    "attribution": "— Emma Stone",
+    "secondaryHeadline": "Ein individueller Ansatz für Schönheit & gesunde Lächeln",
+    "description": "Wir stärken Ihr Selbstvertrauen durch komfortable, personalisierte Behandlungen unter der Leitung von Dr. Salome Tsiskarava.",
+    "cta": "Termin sichern"
+  },
+  "Services": {
+    "header": {
+      "tag": "Unsere Expertise",
+      "title": "Premium-Zahnheilkundelösungen",
+      "cta": "Alle Leistungen ansehen"
+    },
+    "items": {
+      "aesthetic": {
+        "title": "Ästhetische Zahnmedizin",
+        "description": "Premium-Bleaching und Veneers für ein makelloses, selbstbewusstes Lächeln."
+      },
+      "implantology": {
+        "title": "Implantologie",
+        "description": "Hochmoderne Zahnimplantate zur Wiederherstellung von voller Funktion und Ästhetik."
+      },
+      "orthodontics": {
+        "title": "Kieferorthopädie",
+        "description": "Moderne Ausrichtungslösungen, einschließlich Zahnspangen und unsichtbaren Alignern."
+      },
+      "hygiene": {
+        "title": "Professionelle Zahnreinigung",
+        "description": "Tiefenreinigung und präventive Pflege für eine optimale Mundgesundheit."
+      },
+      "restorative": {
+        "title": "Restaurative Zahnmedizin",
+        "description": "Fortschrittliche Verfahren, um die natürliche Schönheit und Stärke der Zähne zurückzugewinnen."
+      },
+      "pediatric": {
+        "title": "Kinderzahnheilkunde",
+        "description": "Sanfte, komfortable und speziell auf Kinder abgestimmte Behandlung."
+      }
+    }
+  },
+  "About": {
+    "tag": "Unsere Geschichte",
+    "title": {
+      "part1": "Wir stärken",
+      "part2": "Ihr Selbstvertrauen"
+    },
+    "description": "Unsere Kernphilosophie ist ein individueller Ansatz für jeden Patienten. Wir konzentrieren uns sowohl auf die ästhetische Schönheit als auch auf die grundlegende Gesundheit Ihres Lächelns und sorgen für eine komfortable, angstfreie Behandlungsumgebung.",
+    "stats": {
+      "reviews": "Basierend auf 22 Google-Bewertungen"
+    },
+    "features": {
+      "digital": "Digitale Diagnostik",
+      "painless": "Schmerzfreie Behandlung"
+    },
+    "cta": "Unsere Methode entdecken"
+  },
+  "Team": {
+    "tag": "Die Spezialisten",
+    "title": {
+      "part1": "Lernen Sie die Experten",
+      "part2": "hinter Ihrem Lächeln kennen"
+    },
+    "roles": {
+      "director": "Klinische Leitung",
+      "orthodontist": "Kieferorthopäde",
+      "implantologist": "Implantologe",
+      "pediatric": "Kinderzahnarzt"
+    }
+  },
+  "BeforeAfter": {
+    "tag": "Erfahrungsberichte",
+    "title": {
+      "part1": "Echte Geschichten",
+      "part2": "Echte Lächeln"
+    },
+    "tabs": {
+      "aesthetic": "Ästhetische Zahnmedizin",
+      "orthodontics": "Kieferorthopädie",
+      "implantology": "Implantologie",
+      "cleaning": "Zahnreinigung"
+    },
+    "labels": {
+      "before": "VORHER",
+      "after": "NACHHER"
+    },
+    "caption": "Unsere Transformationsverfahren sind darauf ausgelegt, nicht nur Ihr Lächeln, sondern auch Ihr Selbstvertrauen wiederherzustellen."
+  },
+  "Footer": {
+    "contact": {
+      "title": "Kontakt",
+      "address": "Giorgi Brtskinvale Str. 24, Tiflis"
+    },
+    "follow": {
+      "title": "Folgen Sie uns",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn"
+    },
+    "booking": {
+      "title": "Termin buchen",
+      "nameLabel": "Vollständiger Name",
+      "namePlaceholder": "Geben Sie Ihren Namen ein",
+      "serviceLabel": "Leistung",
+      "dateLabel": "Datum",
+      "button": "Buchung bestätigen",
+      "services": {
+        "general": "Allgemeine Untersuchung",
+        "orthodontics": "Kieferorthopädie",
+        "implantology": "Implantologie"
+      }
+    },
+    "legal": {
+      "privacy": "Datenschutz",
+      "terms": "AGB",
+      "copyright": "DENTAL CLINIC SENSE. DESIGNED BY"
+    }
+  }
+}

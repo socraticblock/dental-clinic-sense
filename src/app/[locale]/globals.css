@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Deeper, more authoritative blue for better contrast */
+  --color-primary: #2B5760; 
+  --color-primary-dark: #1A353B;
+  --color-secondary: #D4AF37; /* Vibrant Gold */
+  --color-secondary-light: #F1D382;
+  --color-azure: #FFFFFF;
+  --color-cream: #FDFBF7;
+  
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+  
+  --radius-32: 32px;
+}
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #1A353B; 
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}

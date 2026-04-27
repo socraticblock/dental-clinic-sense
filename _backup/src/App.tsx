@@ -5,6 +5,7 @@ import About from './components/About';
 import Team from './components/Team';
 import BeforeAfter from './components/BeforeAfter';
 import Footer from './components/Footer';
+import QuoteDivider from './components/QuoteDivider';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Hero />
         <Services />
         <About />
+        <QuoteDivider />
         <Team />
         <BeforeAfter />
       </main>

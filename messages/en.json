@@ -1,0 +1,130 @@
+{
+  "Navbar": {
+    "brandName": "Dental Clinic Sense",
+    "links": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "doctors": "Doctors",
+      "faq": "FAQ"
+    },
+    "bookButton": "Book Appointment"
+  },
+  "Hero": {
+    "quote": "\"A smile is the prettiest thing you can wear\"",
+    "attribution": "— Emma Stone",
+    "secondaryHeadline": "An Individual Approach To Beauty & Healthy Smiles",
+    "description": "Strengthening your confidence through comfortable, personalized treatments led by Dr. Salome Tsiskarava.",
+    "cta": "Get Your Appointment"
+  },
+  "Services": {
+    "header": {
+      "tag": "Our Expertise",
+      "title": "Premium Dental Care Solutions",
+      "cta": "View All Services"
+    },
+    "items": {
+      "aesthetic": {
+        "title": "Aesthetic Dentistry",
+        "description": "Premium whitening and veneers for a flawless, confident smile."
+      },
+      "implantology": {
+        "title": "Implantology",
+        "description": "State-of-the-art dental implants to restore full function and aesthetics."
+      },
+      "orthodontics": {
+        "title": "Orthodontics",
+        "description": "Modern alignment solutions including braces and clear aligners."
+      },
+      "hygiene": {
+        "title": "Professional Hygiene",
+        "description": "Deep cleaning and preventive care for optimal oral health."
+      },
+      "restorative": {
+        "title": "Restorative Dentistry",
+        "description": "Advanced procedures to recover the natural beauty and strength of teeth."
+      },
+      "pediatric": {
+        "title": "Pediatric Dentistry",
+        "description": "Gentle, comfortable care tailored specifically for children."
+      }
+    }
+  },
+  "About": {
+    "tag": "Our Story",
+    "title": {
+      "part1": "Strengthening",
+      "part2": "Your Confidence"
+    },
+    "description": "Our core philosophy is an individual approach to every patient. We focus on both the aesthetic beauty and the fundamental health of your smile, ensuring a comfortable, anxiety-free treatment environment that empowers you.",
+    "stats": {
+      "reviews": "Based on 22 Google Reviews"
+    },
+    "features": {
+      "digital": "Digital Imaging",
+      "painless": "Painless Care"
+    },
+    "cta": "Discover Our Method"
+  },
+  "Team": {
+    "tag": "The Specialists",
+    "title": {
+      "part1": "Meet The Minds",
+      "part2": "Behind Your Smile"
+    },
+    "roles": {
+      "director": "Clinical Director",
+      "orthodontist": "Orthodontist",
+      "implantologist": "Implantologist",
+      "pediatric": "Pediatric Dentist"
+    }
+  },
+  "BeforeAfter": {
+    "tag": "Testimonials",
+    "title": {
+      "part1": "Real stories",
+      "part2": "Real smiles"
+    },
+    "tabs": {
+      "aesthetic": "Aesthetic Dentistry",
+      "orthodontics": "Orthodontics",
+      "implantology": "Implantology",
+      "cleaning": "Cleaning"
+    },
+    "labels": {
+      "before": "BEFORE",
+      "after": "AFTER"
+    },
+    "caption": "Our transformation procedures are designed to restore not just your smile, but your confidence."
+  },
+  "Footer": {
+    "contact": {
+      "title": "Contact Us",
+      "address": "Giorgi Brtskinvale #24, Tbilisi"
+    },
+    "follow": {
+      "title": "Follow Us",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn"
+    },
+    "booking": {
+      "title": "Book Your Appointment",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Enter your name",
+      "serviceLabel": "Service",
+      "dateLabel": "Date",
+      "button": "Confirm Booking",
+      "services": {
+        "general": "General Exam",
+        "orthodontics": "Orthodontics",
+        "implantology": "Implantology"
+      }
+    },
+    "legal": {
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "copyright": "DENTAL CLINIC SENSE. DESIGNED BY"
+    }
+  }
+}

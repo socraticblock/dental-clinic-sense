@@ -1,19 +1,15 @@
-'use client';
 import { type FC } from 'react';
 import { motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
 import { User } from 'lucide-react';
 
-const Team: FC = () => {
-  const t = useTranslations('Team');
-  
-  const doctors = [
-    { key: 'director', name: 'Dr. Salome Tsiskarava' },
-    { key: 'orthodontist', name: 'Dr. Mariam T.' },
-    { key: 'implantologist', name: 'Dr. Luka B.' },
-    { key: 'pediatric', name: 'Dr. Elena S.' }
-  ];
+const doctors = [
+  { name: 'Dr. Salome Tsiskarava', exp: 'Clinical Director', role: 'Clinical Director' },
+  { name: 'Dr. Mariam T.', exp: '10+ Years', role: 'Orthodontist' },
+  { name: 'Dr. Luka B.', exp: '8+ Years', role: 'Implantologist' },
+  { name: 'Dr. Elena S.', exp: '12+ Years', role: 'Pediatric Dentist' }
+];
 
+const Team: FC = () => {
   return (
     <section id="doctors" className="py-32 bg-white">
       <div className="container">
@@ -22,8 +18,8 @@ const Team: FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-center mb-20"
         >
-          <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">{t('tag')}</span>
-          <h2 className="text-5xl md:text-6xl mx-auto max-w-2xl">{t('title.part1')} <br /> <span className="font-serif italic text-secondary">{t('title.part2')}</span></h2>
+          <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">The Specialists</span>
+          <h2 className="text-5xl md:text-6xl mx-auto max-w-2xl">Meet The Minds <br /> <span className="font-serif italic text-secondary">Behind Your Smile</span></h2>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -40,12 +36,12 @@ const Team: FC = () => {
                 
                 {/* Floating Experience Badge */}
                 <div className="absolute top-6 left-6 bg-white/10 backdrop-blur-md border border-white/20 px-5 py-2.5 rounded-full">
-                  <span className="text-white text-[10px] font-black tracking-widest uppercase">{t(`roles.${doc.key}`)}</span>
+                  <span className="text-white text-[10px] font-black tracking-widest uppercase">{doc.exp}</span>
                 </div>
               </div>
               <div className="pb-4">
                 <h4 className="text-white text-2xl font-serif mb-2">{doc.name}</h4>
-                <p className="text-secondary/80 text-[10px] font-black tracking-[0.2em] uppercase">{t(`roles.${doc.key}`)}</p>
+                <p className="text-secondary/80 text-[10px] font-black tracking-[0.2em] uppercase">{doc.role}</p>
               </div>
             </motion.div>
           ))}

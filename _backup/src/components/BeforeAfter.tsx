@@ -1,11 +1,8 @@
-'use client';
 import { useState, useRef, useCallback, type FC } from 'react';
-import { useTranslations } from 'next-intl';
 
+const tabs = ["Aesthetic Dentistry", "Orthodontics", "Implantology", "Cleaning"];
 
 const BeforeAfter: FC = () => {
-  const t = useTranslations('BeforeAfter');
-  const tabs = ["aesthetic", "orthodontics", "implantology", "cleaning"];
   const [activeTab, setActiveTab] = useState(tabs[0]);
   const [sliderPosition, setSliderPosition] = useState(50);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -24,8 +21,8 @@ const BeforeAfter: FC = () => {
     <section className="py-32 bg-azure/50">
       <div className="container">
         <div className="text-center mb-16">
-          <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">{t('tag')}</span>
-          <h2 className="text-5xl text-primary">{t('title.part1')} <br /> <span className="font-serif italic text-secondary">{t('title.part2')}</span></h2>
+          <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Testimonials</span>
+          <h2 className="text-5xl text-primary">Real stories <br /> <span className="font-serif italic text-secondary">Real smiles</span></h2>
         </div>
 
         {/* Tab System */}
@@ -38,7 +35,7 @@ const BeforeAfter: FC = () => {
                 activeTab === tab ? 'text-primary' : 'text-slate-400'
               }`}
             >
-              {t(`tabs.${tab}`)}
+              {tab}
               {activeTab === tab && (
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-primary" />
               )}
@@ -56,7 +53,7 @@ const BeforeAfter: FC = () => {
           {/* After Image (Background) */}
           <div className="absolute inset-0">
             <img src="/after.png" alt="After Treatment" className="w-full h-full object-cover pointer-events-none" />
-            <div className="absolute top-8 right-8 bg-primary/80 backdrop-blur-md text-white px-5 py-2 rounded-full text-[10px] tracking-widest font-black shadow-lg border border-white/20">{t('labels.after')}</div>
+            <div className="absolute top-8 right-8 bg-primary/80 backdrop-blur-md text-white px-5 py-2 rounded-full text-[10px] tracking-widest font-black shadow-lg border border-white/20">AFTER</div>
           </div>
           
           {/* Before Image (Clipped Overlay) */}
@@ -69,7 +66,7 @@ const BeforeAfter: FC = () => {
               alt="Before Treatment" 
               className="w-full h-full object-cover"
             />
-            <div className="absolute top-8 left-8 bg-black/40 backdrop-blur-md text-white px-5 py-2 rounded-full text-[10px] tracking-widest font-black shadow-lg border border-white/20">{t('labels.before')}</div>
+            <div className="absolute top-8 left-8 bg-black/40 backdrop-blur-md text-white px-5 py-2 rounded-full text-[10px] tracking-widest font-black shadow-lg border border-white/20">BEFORE</div>
           </div>
 
           {/* Draggable Handle */}
@@ -88,7 +85,7 @@ const BeforeAfter: FC = () => {
 
         <div className="mt-12 text-center max-w-2xl mx-auto">
            <p className="text-xl font-serif italic text-primary leading-relaxed">
-             {t('caption')}
+             "Our transformation procedures are designed to restore not just your smile, but your confidence."
            </p>
         </div>
       </div>

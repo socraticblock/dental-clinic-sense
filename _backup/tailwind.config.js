@@ -8,14 +8,15 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#0f2c59',
-          dark: '#0a1e3d',
+          DEFAULT: '#112A22',
+          dark: '#0A1914',
         },
         secondary: {
-          DEFAULT: '#74b9ff',
-          light: '#f0f7ff',
+          DEFAULT: '#C5A059',
+          light: '#E3CDA4',
         },
-        azure: '#f0f7ff',
+        azure: '#FDFBF7',
+        cream: '#FDFBF7',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
