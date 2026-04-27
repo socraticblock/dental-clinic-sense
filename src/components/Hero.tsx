@@ -8,13 +8,13 @@ const Hero: FC = () => {
   const t = useTranslations('Hero');
 
   return (
-    <section className="relative pt-40 pb-32 bg-primary min-h-screen flex items-center overflow-x-hidden">
-      <div className="container px-4 mx-auto">
-        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+    <section className="relative pt-32 pb-32 bg-primary min-h-screen flex items-center overflow-hidden">
+      <div className="container px-6 mx-auto">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-16 lg:gap-24 items-center w-full">
           {/* Founder Image Column - HIDDEN ON MOBILE */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
             className="relative hidden lg:block"
           >
@@ -31,12 +31,12 @@ const Hero: FC = () => {
           {/* Content Column - CENTERED ON MOBILE, LEFT-ALIGNED ON DESKTOP */}
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
             className="w-full flex flex-col items-center lg:items-start text-center lg:text-left"
           >
             {/* Main Headline (H1) */}
-            <h1 className="text-4xl md:text-6xl lg:text-7xl leading-[1.1] mb-6 text-secondary font-serif italic font-bold max-w-[90vw] lg:max-w-none">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl leading-[1.1] mb-6 text-secondary font-serif italic font-bold">
               {t('quote')}
             </h1>
             
