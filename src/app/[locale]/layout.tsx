@@ -22,6 +22,13 @@ export const metadata: Metadata = {
   keywords: ["dentist", "tbilisi", "dental clinic", "orthodontics", "implantology", "aesthetic dentistry"],
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 export default async function LocaleLayout({
   children,
   params
@@ -41,7 +48,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${inter.variable} ${playfair.variable}`}>
+    <html lang={locale} className={`${inter.variable} ${playfair.variable} overflow-x-hidden`}>
       <body className="antialiased overflow-x-hidden">
         <NextIntlClientProvider messages={messages}>
           {children}
