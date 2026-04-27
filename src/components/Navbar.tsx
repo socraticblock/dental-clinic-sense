@@ -32,10 +32,10 @@ const Navbar: FC = () => {
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
       className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl py-4 shadow-sm"
     >
-      <div className="container flex items-center justify-between">
-        <div className="flex items-center gap-4">
-          <img src="/logo.jpg" alt={t('brandName')} className="h-12 w-auto mix-blend-multiply" />
-          <span className="text-2xl font-bold font-serif tracking-tight text-primary">{t('brandName')}</span>
+      <div className="container px-4 flex items-center justify-between gap-2">
+        <div className="flex items-center gap-2 md:gap-4 shrink-0">
+          <img src="/logo.jpg" alt={t('brandName')} className="h-10 md:h-12 w-auto mix-blend-multiply" />
+          <span className="text-lg md:text-2xl font-bold font-serif tracking-tight text-primary hidden sm:inline-block">{t('brandName')}</span>
         </div>
 
         <div className="hidden lg:flex items-center gap-10 font-medium text-primary">
@@ -46,9 +46,9 @@ const Navbar: FC = () => {
           ))}
         </div>
 
-        <div className="flex items-center gap-8">
+        <div className="flex items-center gap-2 md:gap-8">
           <LanguageSwitcher />
-          <button className="bg-primary text-white px-8 py-4 rounded-full font-bold text-sm hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/20">
+          <button className="bg-primary text-white px-4 md:px-8 py-2 md:py-4 rounded-full font-bold text-[10px] md:text-sm hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/20 whitespace-nowrap">
             {t('bookButton')}
           </button>
         </div>
