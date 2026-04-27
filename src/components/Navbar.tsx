@@ -8,17 +8,27 @@ import LanguageSwitcher from './LanguageSwitcher';
 const Navbar: FC = () => {
   const t = useTranslations('Navbar');
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
+    const handleResize = () => setIsMobile(window.innerWidth < 1024);
+    
+    handleScroll();
+    handleResize();
+    
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   return (
     <motion.nav 
       initial={{ y: -100 }}
-      animate={{ y: isScrolled ? 0 : -100 }}
+      animate={{ y: (isScrolled || isMobile) ? 0 : -100 }}
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
       className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl py-4 shadow-sm"
     >
